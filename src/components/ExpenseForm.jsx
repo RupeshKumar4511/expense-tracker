@@ -37,7 +37,7 @@ const ExpenseForm = ({setData,editableData,setEditableData}) => {
   const validateConfig = {
     title:[
       {required:true,message:'Topic is required'},
-      {minLength:5,message:'Title should be atleast 5 characters long'}
+      {minLength:2,message:'Title should be atleast 2 characters long'}
     ],
 
     Category:[
@@ -58,7 +58,7 @@ const ExpenseForm = ({setData,editableData,setEditableData}) => {
         return true
 
       }
-      if(rule.minLength && value.length <5){
+      if(rule.minLength && value.length <2){
         errorsData[key]= rule.message;
         return true;
       }
