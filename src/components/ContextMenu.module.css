@@ -1,0 +1,13 @@
+.context-menu{
+    background-color:white;
+    border:1px solid;
+    position:absolute;
+    border-radius:4px;
+    overflow:hidde;
+    cursor:pointer;
+    box-shadow:0px 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+.context-menu div:hover{
+    background-color:rgba(0,0,0,0.2);
+}
